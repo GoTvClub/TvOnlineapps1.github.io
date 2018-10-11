@@ -51,8 +51,8 @@ onload=function(){
 
                             <div class="menu">
                                   <ul>
-                                        <li><a href="#main">Inicio</a></li>
-                                        <li><a href="#descarga">Descarga e instalación</a></li>
+                                        <li><a class="btn btn-light" href="#main">Inicio</a></li>
+                                        <li><a class="btn btn-light" href="#descarga">Descarga e instalación</a></li>
 
                                   </ul>
                             </div>
@@ -60,7 +60,7 @@ onload=function(){
 
 
 
-  <div class="container.fluid" id="main" >
+  <div class="container" id="main" >
     <div class="intro">
     <h1 class="h1" id="maintxt">
     La evolución de la televisión, ahora toda tu programación favorita desde tu móvil
@@ -99,40 +99,32 @@ onload=function(){
 
 
 <section id="descarga">
-  <div class="container-fluid" >
+  <div class="container" >
   <div class="row">
 
-   <!--div class="col-xs-12 col-sm-3 col-md-3">
-    <img class="img-fluid" style="margin:20px 20px 20px 20px ;width:100%;display: block;margin-left: auto;margin-right: auto;" src="imagenes/newlogo.png">
-  </div-->
-
-   <div class="col-xs-12 col-sm-8 col-md-8">
+   <div class="col-xs-12 col-sm-12 col-md-12">
      <div class="embed-responsive embed-responsive-16by9">
-    <iframe style="padding:10px;" width="100%" height="500px" src="https://www.youtube.com/embed/C61LTZEg1hw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-   </div>
+       <video id="videoguia" width="100" controls >
+         <source src="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.mp4?alt=media&token=85e5d1ad-eb03-48db-8ecb-a9ef6508ac62" type="video/mp4">
+         Your browser does not support HTML5 video.
+       </video>
+     </div>
 
-   <div class="col-xs-12 col-sm-4 col-md-4">
-     <p class="h5">Desde tu Movil:</p>
-    <p class="h6" style="color:#757575;">1.-Descargar la aplicación <a class="btn btn-raised btn-warning" href="https://com-example-home-tvonline.es.aptoide.com/?store_name=cantervilleapps" target="_blank" rel="noopener">Descargar APK</a>.<br>
-    2.-ve a Ajustes > Bloqueo y seguridad ><br> Orígenes (o Fuentes) desconocidos para <br> permitir la instalación de aplicaciones <br> de fuentes distintas de Google Play Store.<br>
-    <br>3.-Dar clic e instalar la aplicación.</p>
-     <p class="h5">Desde tu Computador:</p>
-     <p class="h6" style="color:#757575;"> <br> Si la descarga desde tu Computador debes <br>
-        hacer un pasos adicionales. <br>
-    <br>  1.-Conecte su movil al computador. <br>
-    <br>  2.-Vaya al lugar donde se descargo el archivo <small class="text-muted">TvOnline.Apk</small>.  <br>
-    <br>  3.-Copie el archivo a la SD o Memoria interna. <br>
-    <br>  4.-Siga los pasos anteriores.</p>
-   </div>
 
+   </div>
  </div>
-</div>
-<!-- NOTE:
-<a class="btn btn-primary" href="#sB" style="position:relative;left:50%;
-top: 50%;transform: translate(-50%,-50%);">Descargar APK</a> -->
-</section>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <div align="center">
+    <a class="btn btn-outline-warning" style="margin:20px;" href="https://com-example-home-tvonline.es.aptoide.com/?store_name=cantervilleapps" target="_blank" rel="noopener">Descargar APK</a>
+    </div>
 
+  </div>
+
+</div>
+
+</div>
+</section>
 <section id="footer">
   <div class="container-fluid">
     <div class="row">
