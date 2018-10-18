@@ -40,110 +40,100 @@ onload=function(){
 <body>
 
   <nav>
-                            <div class="menu-icon">
-                                  <i class="fa fa-bars fa-2x"></i>
-                            </div>
-
-                            <div class="logotipo">
-                              <img class="logo" src="imagenes/newlogowhite.png"  >
-                              <span >TvOnline</span>
-                            </div>
-
-                            <div class="menu">
-                                  <ul>
-                                        <li><a class="btn btn-light" href="#main">Inicio</a></li>
-                                        <li><a class="btn btn-light" href="#descarga">Descarga e instalación</a></li>
-
-                                  </ul>
-                            </div>
-                      </nav>
-
-
-
-  <div class="container" id="main" >
-    <div class="intro">
-    <h1 class="h1" id="maintxt">
-    La evolución de la televisión, ahora toda tu programación favorita desde tu móvil
-    <span id="textchanging" style="font-weight:bold;font-family: 'Roboto', sans-serif;"></span>
-    </h1>
-
-   </div>
-
-    <div align="center" >
-      <div class="row" id="screemsh"  >
-
-
-          <div class=" col">
-
-            <img class="cell1"  src="imagenes/model.png"/>
-              <p class="h1" style="text-align:center;color:#212121;text-shadow: 2px 2px 5px #757575;">CANALES</p>
-          </div>
-          <div class="col" >
-              <img  class="logo2" src="imagenes/newlogowhite.png">
-          </div>
-
-          <div class="col">
-
-            <!--p class="h1" style=" line-height: 500px;text-align:center;color:white;">PELICULAS</p-->
-              <img class="cell2" src="imagenes/model2.png"/>
-                <p class="h1" style="text-align:center;color:#212121; text-shadow: 2px 2px 5px #757575;">PELICULAS</p>
-          </div>
-
-
-
-      </div>
-      </div>
-  </div>
-
+    <div class="menu-icon">
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <div class="logotipo">
+      <img class="logo" style="height:30px;width:30px;" src="imagenes/newlogowhite.png"  >
+      <span >TvOnline</span>
     </div>
 
+    <div class="menu">
+      <ul>
+        <li><a class="btn btn-light" href="#main">Inicio</a></li>
+        <li><a class="btn btn-light" href="#btnDownload">Descarga</a></li>
 
-<section id="descarga">
-  <div class="container" >
+      </ul>
+    </div>
+  </nav>
+
+
+
+   <div class="container" id="main" >
+     <div class="intro">
+       <h1 class="h1" id="maintxt">
+         La evolución de la televisión, ahora toda tu programación favorita desde tu móvil
+         <span id="textchanging" style="font-weight:bold;font-family: 'Roboto', sans-serif;"></span>
+       </h1>
+     </div>
+
+    
+       <div class="container">
+         <div class="row">
+        
+          <div class="col-xs-12 col-sm-12 col-md-6">
+           <div style="display:flex;">
+             <img class="cell1"  src="imagenes/model.png"/>
+            <img class="cell2" src="imagenes/model2.png"/>
+           </div>
+            
+          </div>
+          
+          <div class="col-xs-12 col-sm-12 col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                  <video id="videoguia" width="100" controls muted autoplay>
+                    <source src="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.mp4?alt=media&token=85e5d1ad-eb03-48db-8ecb-a9ef6508ac62" type="video/mp4">
+                  </video>
+              </div>
+              <div align="center">
+                  <a class="btn btn-outline-warning" id="btnDownload" style="margin:20px;" href="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.apk?alt=media&token=61335213-292d-4473-bf3c-f4a3c163b9fb" target="_blank" rel="noopener">Descargar APK Ver 1.9.5</a>
+               </div>
+          </div>
+         </div>
+       </div>
+    </div>
+
+ 
+
+
+<!--section id="descarga">
+<div class="container" >
+  
   <div class="row">
-
    <div class="col-xs-12 col-sm-12 col-md-12">
      <div class="embed-responsive embed-responsive-16by9">
        <video id="videoguia" width="100" controls >
          <source src="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.mp4?alt=media&token=85e5d1ad-eb03-48db-8ecb-a9ef6508ac62" type="video/mp4">
-         Your browser does not support HTML5 video.
        </video>
      </div>
-
-
    </div>
- </div>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12">
-    <div align="center">
-    <a class="btn btn-outline-warning" style="margin:20px;" href="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.apk?alt=media&token=61335213-292d-4473-bf3c-f4a3c163b9fb" target="_blank" rel="noopener">Descargar APK Ver 1.9.5</a>
-    </div>
+  </div>
 
+  <div class="row">
+     <div class="col-xs-12 col-sm-12 col-md-12">
+        <div align="center">
+           <a class="btn btn-outline-warning" style="margin:20px;" href="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.apk?alt=media&token=61335213-292d-4473-bf3c-f4a3c163b9fb" target="_blank" rel="noopener">Descargar APK Ver 1.9.5</a>
+        </div>
+     </div>
   </div>
 
 </div>
+</section-->
 
-</div>
-</section>
 <section id="footer">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="">
-
-      </div>
       <div class="col-xs-12 col-sm-3 col-md-3">
-          <h4 class="h4">Siguenos:</h4>
-          <div style="padding:10px 10px 10px 10px;">
-
-            <a href="https://www.instagram.com/tvonlineapps/" target="_blank" rel="noopener"><img src="imagenes/instagram.png" alt="" style="width:10%;height:auto;"> instagram </a>
-            <a href="https://t.me/joinchat/HuVL7ksrEUV90_GzGE4ZSQ" target="_blank" rel="noopener"><img src="imagenes/telegram.png" alt="" style="width:10%;height:auto;"> telegram </a>
-          </div>
-          </div>
+            <h4 class="h4">Siguenos:</h4>
+            <div style="padding:10px 10px 10px 10px;">
+              <a href="https://www.instagram.com/tvonlineapps/" target="_blank" rel="noopener"><img src="imagenes/instagram.png" alt="" style="width:10%;height:auto;"> instagram </a>
+              <a href="https://t.me/joinchat/HuVL7ksrEUV90_GzGE4ZSQ" target="_blank" rel="noopener"><img src="imagenes/telegram.png" alt="" style="width:10%;height:auto;"> telegram </a>
+            </div>
+      </div>
       <div class="col-xs-12 col-sm-9 col-md-9">
-          <p class="h6" style="float:right;position: relative;position: relative;top:40px ;">© 2018 TvOnlineApps</p>
+            <p class="h6" style="float:right;position: relative;position: relative;top:40px ;">© 2018 TvOnlineApps</p>
       </div>
     </div>
-
   </div>
 </section>
 
