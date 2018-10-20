@@ -13,21 +13,11 @@
 <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
 
 <script async="async">
-    var text = ["Peliculas", "Series", "Deportes","Eventos","PPV"];
-
-	//var i = 0;
-	//for (i = 0; i < 6; i++) {
-    //document.getElementById("textchanging").innerHTML = text[i];
- 	//if (true) {};
+var text = ["Peliculas", "Series", "Deportes","Eventos","PPV"];
 
 function rotarImagen() {
-
 	 var index=Math.floor((Math.random()*text.length));
-
 	 document.getElementById("textchanging").innerHTML = text[index];
-	//document.getElementById("imagen").src=imagenes[index][0];
-
-
 }
 onload=function(){
 	 rotarImagen();
@@ -39,7 +29,7 @@ onload=function(){
 </head>
 <body>
 
-  <nav>
+  <!--nav>
     <div class="menu-icon">
       <i class="fa fa-bars fa-2x"></i>
     </div>
@@ -55,40 +45,34 @@ onload=function(){
 
       </ul>
     </div>
-  </nav>
+  </nav-->
+    <div style="height: 80px;">  
 
+    </div>
 
 
    <div class="container" id="main" >
-     <div class="intro">
-       <h1 class="h1" id="maintxt">
-         La evolución de la televisión, ahora toda tu programación favorita desde tu móvil
-         <span id="textchanging" style="font-weight:bold;font-family: 'Roboto', sans-serif;"></span>
-       </h1>
-     </div>
-
-    
+      
        <div class="container">
          <div class="row">
-        
+         <div class="col-xs-12 col-sm-12 col-md-6">
+            <h1 class="h1" id="intro" >
+              La evolución de la televisión, ahora toda tu programación favorita desde tu móvil <br>
+              <span id="textchanging" style="font-weight:bold;font-family: 'Roboto', sans-serif;"></span>
+            </h1>
+              <div align="center">
+                  <a class="btn btn-raised btn-lg"  style="background-color: white;color: orange;" href="http://www.mediafire.com/file/a6mmvhslt41a2a1/TvOnline.apk/file" target="_blank" rel="noopener">Descargar APK Ver 1.9.6</a>
+               </div>
+            </div>    
           <div class="col-xs-12 col-sm-12 col-md-6">
-           <div style="display:flex;">
-             <img class="cell1"  src="imagenes/model.png"/>
-            <img class="cell2" src="imagenes/model2.png"/>
-           </div>
+           <div align="center">
+            <img class="cell2" src="imagenes/newlogo.png"/>
+            </div>
             
           </div>
           
-          <div class="col-xs-12 col-sm-12 col-md-6">
-              <div class="embed-responsive embed-responsive-16by9">
-                  <video id="videoguia" width="100" controls muted autoplay>
-                    <source src="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.mp4?alt=media&token=85e5d1ad-eb03-48db-8ecb-a9ef6508ac62" type="video/mp4">
-                  </video>
-              </div>
-              <div align="center">
-                  <a class="btn btn-outline-warning" id="btnDownload" style="margin:20px;" href="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.apk?alt=media&token=61335213-292d-4473-bf3c-f4a3c163b9fb" target="_blank" rel="noopener">Descargar APK Ver 1.9.5</a>
-               </div>
-          </div>
+         
+         
          </div>
        </div>
     </div>
@@ -96,29 +80,43 @@ onload=function(){
  
 
 
-<!--section id="descarga">
+<section id="descarga">
 <div class="container" >
   
   <div class="row">
-   <div class="col-xs-12 col-sm-12 col-md-12">
-     <div class="embed-responsive embed-responsive-16by9">
-       <video id="videoguia" width="100" controls >
-         <source src="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.mp4?alt=media&token=85e5d1ad-eb03-48db-8ecb-a9ef6508ac62" type="video/mp4">
-       </video>
-     </div>
-   </div>
-  </div>
-
-  <div class="row">
-     <div class="col-xs-12 col-sm-12 col-md-12">
-        <div align="center">
-           <a class="btn btn-outline-warning" style="margin:20px;" href="https://firebasestorage.googleapis.com/v0/b/tvonline-2d6d4.appspot.com/o/UltimateTv.apk?alt=media&token=61335213-292d-4473-bf3c-f4a3c163b9fb" target="_blank" rel="noopener">Descargar APK Ver 1.9.5</a>
+  <div class="col-xs-12 col-sm-12 col-md-4">
+        <div>
+            <img class="img-thumbnail" src="imagenes/main.png"/>
+            <li>Preconfigurada con lista que se actualizan constantemente.  </li>
+            <li>Configura tus propias listas en cualquier momento.</li>
+            <li>Descarga las ultimas actualizaciones de la App.</li>
+            <li>Escribe tus comentarios y sugerencias.</li>
         </div>
-     </div>
+   </div>
+   <div class="col-xs-12 col-sm-12 col-md-4">
+      <div>
+          <img class="img-thumbnail" src="imagenes/lista1.png"/>
+          <li>Ya que nos enfocamos en el orden, se dividio en dos secciones.
+            La lista #1 se enfoca en listas de peliculas y series, La lista #2 en Canales de Tv pero 
+            podrias tambien ingresar tus propias listas.
+          </li>
+          <li>Puede filtrar sus lista y encontrar su contenido favorito rapidamente</li>
+        
+      </div>
+ </div>
+ <div class="col-xs-12 col-sm-12 col-md-4">
+    <div>
+        <img class="img-thumbnail" src="imagenes/lista2.png"/>
+          <li>Incluye funcion CAST que por el momento no es nativa de la app pero
+            funciona de una manera espectacular en todo tipo de dispositivo Amazon Fire TV and Stick,
+            Android TV, Apple TV, Chromecast , DLNA Renderers, SmartTVs.
+          </li>
+    </div>
+</div>
   </div>
 
 </div>
-</section-->
+</section>
 
 <section id="footer">
   <div class="container">
