@@ -5,7 +5,7 @@ html,body{
 }
 
 body{
-   background-color: white;
+   background-color: whitesmoke;
 /* background:  radial-gradient(#FF9800,#F57C00);*/
 }
 
@@ -22,22 +22,16 @@ body{
 	z-index: -1;
 }
 
+
+
+
+
 #intro	{
 	width: 100%;
     text-align: center;
     color: white ;
 }
-#maintxt{
-	position: relative;
-    top: 45%;
-}
 
-.logo2{
-	position:relative ;
-	width:20%;
-	height:auto;
-	visibility: visible;
-}
 
 
 @media screen and (max-width: 575.98px){
@@ -49,20 +43,9 @@ body{
 		font-size: 24px;
 	}
 	
-	.col > p {
-		font-size: 24px;
-	}
-	.col{
-		height: 30%;
-	}
-	.logo2{
-		visibility: hidden;
-	}
-
-
 }
 	
-
+.mySlides {display:none;}
 .cell2{
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -75,16 +58,35 @@ body{
 @media screen and (max-width: 575.98px){
 
 	.cell2{
-		height:30%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		
 	}
 }	
 
 #descarga{
 	padding: 6%;
 	
+	
+}
+
+#cards{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	height: 100%;
+	text-align: start;
+}
+@media screen and (max-width: 575.98px){
+	.cards{
+	
+		height: 99%;
+	}
+	
+}	
+.cards > li{
+	padding:6px;
+    
+}
+#footer{
+	background-color:#F2F2F2 ;
 }
 
 @keyframes rebote {
@@ -111,9 +113,7 @@ body{
 	}
 }
 
-#footer{
-	background-color:#F2F2F2 ;
-}
+
 
 @keyframes increase {
 	0%{transform:scale(1)}
