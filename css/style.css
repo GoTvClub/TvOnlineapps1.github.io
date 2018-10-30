@@ -1,25 +1,13 @@
-html,body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
-body{
-   background-color: whitesmoke;
-/* background:  radial-gradient(#FF9800,#F57C00);*/
-}
-
-
-#main::before{
-	content: '';
-	width: 100%;
-	height: 60%;
+#main{
+	padding: 3%;
 	background-color: #ff7e00;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 0;
-	left: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*content: '';width: 100%;height: 60%;	top: 0;left: 0;
+    	background-repeat: no-repeat;position: absolute;
 	z-index: -1;
+*/	
+	
 }
 
 
@@ -37,15 +25,11 @@ body{
 @media screen and (max-width: 575.98px){
 	#intro	{
 		bottom:7%;
-		position: relative;
-		text-align: center;
-		color: white ;
 		font-size: 24px;
 	}
 	
 }
 	
-.mySlides {display:none;}
 .cell2{
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -55,16 +39,10 @@ body{
 	height:70%;
 }
 
-@media screen and (max-width: 575.98px){
 
-	.cell2{
-		
-	}
-}	
 
-#descarga{
-	padding: 6%;
-	
+#Guia{
+margin-top: 3%;
 	
 }
 
