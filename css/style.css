@@ -1,20 +1,53 @@
+html, 
+body {
+    height: 100%;
+}
+ 
+.container-fluid.design{
+	padding-top: 5%;
+	height: 100%;
+	width:auto ;
+	background-image: linear-gradient(#FE8E4F, #FE6D48);
+}
+
+#header-main-title {
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 1.16;
+	margin: 5%;
+	color: #ffffff;
+	text-shadow: 2px 2px 8px #00000050;
+	max-width: 540px;
+}
+
+.main_right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	max-width: 610px;
+	z-index: 1;
+	padding-bottom: 64px;
+	/*background-image: url("../imagenes/bgmain.jpeg");
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 
 
-
-.container.main{
-	padding: 3%;
-	background-image: url("../imagenes/bgmain.jpeg");
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	/*content: '';width: 100%;height: 60%;	top: 0;left: 0;
-    	background-repeat: no-repeat;position: absolute;
-	z-index: -1;
-*/
-
+}
+.main_left{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+	width: 50%;
+	max-width: 610px;
+	position: relative;
+	margin-left: 16px;
+	z-index: 1;
 
 }
 
 .material-icons.md-dark { 
-	color: rgb(0, 0, 0);
+	color: rgb(254, 142, 79);
 	 font-size: 36px;
 	 text-align: center;
 }
@@ -22,38 +55,27 @@
 
 
 
-#intro	{
-	width: 100%;
-    text-align: center;
-    color: white ;
-}
 
 
-
-@media screen and (max-width: 575.98px){
-	#intro	{
-		bottom:7%;
-		font-size: 24px;
-	}
-
-}
-
-.cell2{
+.logo{
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	background: white;
-   	width: 30%;
+  width: 30%;
 	height:50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-
-#footer{
-	background-color:#F2F2F2 ;
+.logoAndroid{
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: white;
+  width: 30%;
+	height:50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 /*
 aqui establecemos el diseño de los botones
@@ -65,59 +87,85 @@ aqui establecemos el diseño de los botones
 			padding: 10px;
 			display: block;
 			margin:10px;
-			color: #000000;
+			color: #FE6D48;
 			text-align: center;
 			background-color: #ffffff;
 			border-radius: 6px;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
    
   }
-  .btndesign:hover{
-    color: #ffffff;
-	background-color: #E54303;
-	
-  }
+ 
 /*
 Diseño de botones para moviles
 
 */
-  @media screen and (max-width: 575.98px){
-	.btndesign{
-		/*
-		  font-size: 20px;
-		  font-weight: 600;
-		*/
-		text-decoration: none;
-		width: 100%;
-		 padding: 5px;
-		display: block;
-		margin:2px;
-		color: #000000;
-		text-align: center;
-		background-color: #ffffff;
-		border-radius: 6px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
-	  }
-	  .btndesign:hover{
-			color: #ffffff;
-			background-color: #E54303;
-	  }
 
-}
 
 .icons8-aplicación-telegrama { 
 	display: inline-block;
 	width: 36px;
 	height: 36px;
-	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxOTIgMTkyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE5MnYtMTkyaDE5MnYxOTJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTE2Mi40MjE4NywyMy44NzVjLTIuMzExNzIsMC4xMDA1NiAtNC40MzMyMSwwLjc2NTQ0IC02LjI5Njg3LDEuNWMtMS43MjE3NCwwLjY3ODA3IC03LjkwNDY4LDMuMjc2NzggLTE3Ljc1LDcuNDA2MjVjLTkuODQ1MzIsNC4xMjk0NyAtMjIuODkxMTksOS42MDQ2MyAtMzYuNzk2ODcsMTUuNDUzMTNjLTI3LjgxMTM3LDExLjY5Njk5IC01OS4wNjQyMiwyNC44NTQ2MyAtNzUuMDc4MTMsMzEuNTkzNzVjLTAuNTQ5OTMsMC4yMjkxMiAtMi43ODMzMiwwLjkxMjg0IC01LjI1LDIuNzk2ODhjLTIuNDcyNCwxLjg4ODQxIC01LjIxODc1LDUuOTg2NyAtNS4yMTg3NSwxMC40Njg3NWMwLDMuNjE1NjIgMS44MDQ5MSw3LjI5Nzk4IDMuOTg0MzgsOS40MDYyNWMyLjE3OTQ2LDIuMTA4MjcgNC4zODgzLDMuMDkzOTUgNi4yMzQzOCwzLjgyODEzdi0wLjAxNTYzYzYuMjQwMjIsMi40ODYxMiAyNC44NzU1NSw5Ljk0MzAxIDI5LjMxMjUsMTEuNzE4NzVjMS41NzM4NCw0LjcxNjIyIDguMzMwMjIsMjQuOTA2OTggOS45Mzc1LDI5Ljk4NDM4aC0wLjAxNTYyYzEuMTM2MSwzLjU5MzY3IDIuMjQzNDYsNS45MzU2OCAzLjc4MTI1LDcuODkwNjJjMC43Njg5LDAuOTc3NDcgMS42ODY2OSwxLjg2MzIyIDIuODEyNSwyLjU2MjVjMC40MzE5NSwwLjI2ODMyIDAuOTEwMjQsMC40NzY0MyAxLjM5MDYzLDAuNjcxODdjMC4wNjY5NSwwLjAyODQyIDAuMTM1OTQsMC4wMzU0NyAwLjIwMzEyLDAuMDYyNWwtMC4xODc1LC0wLjA0Njg4YzAuMTM5MjksMC4wNTYgMC4yNjQzLDAuMTM4NjIgMC40MDYyNSwwLjE4NzVjMC4yMzEzMiwwLjA3OTY2IDAuMzkxNjcsMC4wNzcwNCAwLjcwMzEzLDAuMTQwNjJjMS4wOTYwNCwwLjMzNzE4IDIuMTkwMDgsMC41NjI1IDMuMjAzMTIsMC41NjI1YzQuMzQ4ODgsMCA3LjAxNTYyLC0yLjM1OTM4IDcuMDE1NjIsLTIuMzU5MzdsMC4xNzE4OCwtMC4xMjUwMWwxOC43ODEyNSwtMTUuODkwNjJsMjMsMjEuMjgxMjZjMC40MjAxMSwwLjU5MzE4IDMuNzExMjEsNS4wNDY4NyAxMS4zMjgxMyw1LjA0Njg3YzQuNTQ1LDAgOC4xMzg0NSwtMi4yNDk2NyAxMC40Mzc1LC00LjYwOTM4YzIuMjk5MDUsLTIuMzU5NyAzLjczMTE4LC00Ljc3NDE0IDQuMzc1LC04LjA0Njg3bDAuMDE1NjIsLTAuMDE1NjJjMC41MTM0NCwtMi42NDE0NiAyMi41MzEyNiwtMTEzLjIwMzEzIDIyLjUzMTI2LC0xMTMuMjAzMTNsLTAuMDQ2ODgsMC4xODc1YzAuNjg1MjgsLTMuMDU4NzYgMC44ODc2MywtNi4wMTY4IDAuMDc4MTMsLTkuMDMxMjVjLTAuODA5NTEsLTMuMDE0NDUgLTIuOTk0MjEsLTUuOTU2MjUgLTUuNjI1LC03LjVjLTIuNjMwOCwtMS41NDM3NSAtNS4xMjU3OCwtMi4wMDY4MSAtNy40Mzc1LC0xLjkwNjI1ek0xNTkuMjY1NjIsNDEuMzkwNjJjLTAuODcwMDksNC4zNjgyNCAtMjAuNTkzNTQsMTAzLjQ1NjM5IC0yMS44MTI1LDEwOS42NzE4N2wtMzMuMjE4NzUsLTMwLjczNDM3bC0yMi40NTMxMywxOC45ODQzN2w2LjIxODc1LC0yNC4zMTI1YzAsMCA0Mi45MDAzOCwtNDMuNDI1MTIgNDUuNDg0MzgsLTQ1Ljk1MzEyYzIuMDgsLTIuMDI0IDIuNTE1NjIsLTIuNzMzNSAyLjUxNTYyLC0zLjQzNzVjMCwtMC45MzYgLTAuNDgxNzUsLTEuNjA5MzggLTEuNTkzNzUsLTEuNjA5MzhjLTEsMCAtMi4zNTgxMiwwLjk1ODI1IC0zLjA3ODEyLDEuNDA2MjVjLTkuMTQ5MTgsNS43MDQwMyAtNDguMTE3ODYsMjcuOTExMjMgLTY3LjI4MTI1LDM4LjgxMjVjLTEuMTUzMjYsLTAuNDYyNDMgLTE4LjQ2NzcxLC03LjQxNTA5IC0yNy43OTY4OCwtMTEuMTQwNjJjMTYuNTk0MTIsLTYuOTgzOTcgNDUuMDM5MjUsLTE4Ljk1MTY2IDcxLjUzMTI1LC0zMC4wOTM3NWMxMy45MDMzMiwtNS44NDc1IDI2Ljk0NTMzLC0xMS4zMjc1OSAzNi43ODEyNSwtMTUuNDUzMTNjOC4zMDI3NywtMy40ODI0NyAxMi42MzM4MSwtNS4yODU2MiAxNC43MDMxMywtNi4xNDA2MnpNMTM3LjIxODc1LDE1Mi4yMDMxM2gwLjAxNTYyYy0wLjAwMDM2LDAuMDAxODQgLTAuMDE0ODIsMC4wNDQ0NyAtMC4wMTU2MiwwLjA0Njg3YzAuMDEwMTcsLTAuMDUxNjkgLTAuMDA3NjMsLTAuMDA2NCAwLC0wLjA0Njg3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxOTIgMTkyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE5MnYtMTkyaDE5MnYxOTJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZlNmQ0OCI+PHBhdGggZD0iTTE2Mi40MjE4NywyMy44NzVjLTIuMzExNzIsMC4xMDA1NiAtNC40MzMyMSwwLjc2NTQ0IC02LjI5Njg3LDEuNWMtMS43MjE3NCwwLjY3ODA3IC03LjkwNDY4LDMuMjc2NzggLTE3Ljc1LDcuNDA2MjVjLTkuODQ1MzIsNC4xMjk0NyAtMjIuODkxMTksOS42MDQ2MyAtMzYuNzk2ODcsMTUuNDUzMTNjLTI3LjgxMTM3LDExLjY5Njk5IC01OS4wNjQyMiwyNC44NTQ2MyAtNzUuMDc4MTMsMzEuNTkzNzVjLTAuNTQ5OTMsMC4yMjkxMiAtMi43ODMzMiwwLjkxMjg0IC01LjI1LDIuNzk2ODhjLTIuNDcyNCwxLjg4ODQxIC01LjIxODc1LDUuOTg2NyAtNS4yMTg3NSwxMC40Njg3NWMwLDMuNjE1NjIgMS44MDQ5MSw3LjI5Nzk4IDMuOTg0MzgsOS40MDYyNWMyLjE3OTQ2LDIuMTA4MjcgNC4zODgzLDMuMDkzOTUgNi4yMzQzOCwzLjgyODEzdi0wLjAxNTYzYzYuMjQwMjIsMi40ODYxMiAyNC44NzU1NSw5Ljk0MzAxIDI5LjMxMjUsMTEuNzE4NzVjMS41NzM4NCw0LjcxNjIyIDguMzMwMjIsMjQuOTA2OTggOS45Mzc1LDI5Ljk4NDM4aC0wLjAxNTYyYzEuMTM2MSwzLjU5MzY3IDIuMjQzNDYsNS45MzU2OCAzLjc4MTI1LDcuODkwNjJjMC43Njg5LDAuOTc3NDcgMS42ODY2OSwxLjg2MzIyIDIuODEyNSwyLjU2MjVjMC40MzE5NSwwLjI2ODMyIDAuOTEwMjQsMC40NzY0MyAxLjM5MDYzLDAuNjcxODdjMC4wNjY5NSwwLjAyODQyIDAuMTM1OTQsMC4wMzU0NyAwLjIwMzEyLDAuMDYyNWwtMC4xODc1LC0wLjA0Njg4YzAuMTM5MjksMC4wNTYgMC4yNjQzLDAuMTM4NjIgMC40MDYyNSwwLjE4NzVjMC4yMzEzMiwwLjA3OTY2IDAuMzkxNjcsMC4wNzcwNCAwLjcwMzEzLDAuMTQwNjJjMS4wOTYwNCwwLjMzNzE4IDIuMTkwMDgsMC41NjI1IDMuMjAzMTIsMC41NjI1YzQuMzQ4ODgsMCA3LjAxNTYyLC0yLjM1OTM4IDcuMDE1NjIsLTIuMzU5MzdsMC4xNzE4OCwtMC4xMjUwMWwxOC43ODEyNSwtMTUuODkwNjJsMjMsMjEuMjgxMjZjMC40MjAxMSwwLjU5MzE4IDMuNzExMjEsNS4wNDY4NyAxMS4zMjgxMyw1LjA0Njg3YzQuNTQ1LDAgOC4xMzg0NSwtMi4yNDk2NyAxMC40Mzc1LC00LjYwOTM4YzIuMjk5MDUsLTIuMzU5NyAzLjczMTE4LC00Ljc3NDE0IDQuMzc1LC04LjA0Njg3bDAuMDE1NjIsLTAuMDE1NjJjMC41MTM0NCwtMi42NDE0NiAyMi41MzEyNiwtMTEzLjIwMzEzIDIyLjUzMTI2LC0xMTMuMjAzMTNsLTAuMDQ2ODgsMC4xODc1YzAuNjg1MjgsLTMuMDU4NzYgMC44ODc2MywtNi4wMTY4IDAuMDc4MTMsLTkuMDMxMjVjLTAuODA5NTEsLTMuMDE0NDUgLTIuOTk0MjEsLTUuOTU2MjUgLTUuNjI1LC03LjVjLTIuNjMwOCwtMS41NDM3NSAtNS4xMjU3OCwtMi4wMDY4MSAtNy40Mzc1LC0xLjkwNjI1ek0xNTkuMjY1NjIsNDEuMzkwNjJjLTAuODcwMDksNC4zNjgyNCAtMjAuNTkzNTQsMTAzLjQ1NjM5IC0yMS44MTI1LDEwOS42NzE4N2wtMzMuMjE4NzUsLTMwLjczNDM3bC0yMi40NTMxMywxOC45ODQzN2w2LjIxODc1LC0yNC4zMTI1YzAsMCA0Mi45MDAzOCwtNDMuNDI1MTIgNDUuNDg0MzgsLTQ1Ljk1MzEyYzIuMDgsLTIuMDI0IDIuNTE1NjIsLTIuNzMzNSAyLjUxNTYyLC0zLjQzNzVjMCwtMC45MzYgLTAuNDgxNzUsLTEuNjA5MzggLTEuNTkzNzUsLTEuNjA5MzhjLTEsMCAtMi4zNTgxMiwwLjk1ODI1IC0zLjA3ODEyLDEuNDA2MjVjLTkuMTQ5MTgsNS43MDQwMyAtNDguMTE3ODYsMjcuOTExMjMgLTY3LjI4MTI1LDM4LjgxMjVjLTEuMTUzMjYsLTAuNDYyNDMgLTE4LjQ2NzcxLC03LjQxNTA5IC0yNy43OTY4OCwtMTEuMTQwNjJjMTYuNTk0MTIsLTYuOTgzOTcgNDUuMDM5MjUsLTE4Ljk1MTY2IDcxLjUzMTI1LC0zMC4wOTM3NWMxMy45MDMzMiwtNS44NDc1IDI2Ljk0NTMzLC0xMS4zMjc1OSAzNi43ODEyNSwtMTUuNDUzMTNjOC4zMDI3NywtMy40ODI0NyAxMi42MzM4MSwtNS4yODU2MiAxNC43MDMxMywtNi4xNDA2MnpNMTM3LjIxODc1LDE1Mi4yMDMxM2gwLjAxNTYyYy0wLjAwMDM2LDAuMDAxODQgLTAuMDE0ODIsMC4wNDQ0NyAtMC4wMTU2MiwwLjA0Njg3YzAuMDEwMTcsLTAuMDUxNjkgLTAuMDA3NjMsLTAuMDA2NCAwLC0wLjA0Njg3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat;
 	background-size: 100%; }
 
-.screen{
-	margin-top : 15px;
-	width: 70% ;
-	height: 80%;
+.screentv{
+	position: absolute;
+	width: 90% ;
+	height: 85%;
+
 }
+
 
 .h2.size{
 	margin-top: 15px;
+}
+
+#footer{
+	background-color:#F2F2F2 ;
+}
+
+
+/*
+diseño movil
+*/
+@media screen and (max-width: 575.98px){
+	#header-main-title {
+		font-size: 2rem;
+		font-weight: bold;
+		line-height: 1.16;
+		color: #ffffff;
+		margin: 5%;
+		text-shadow: 2px 2px 8px #00000050;
+		max-width: 540px;
+	}
+	
+.logo{
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: white;
+  width: 30%;
+	height:50%;
+}
+
+
+	.btndesign{
+		text-decoration: none;
+		width: 100%;
+		 padding: 5px;
+		display: block;
+		margin:2px;
+		color: #FE6D48;
+		text-align: center;
+		background-color: #ffffff;
+		border-radius: 6px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+		}
+		.screentv{
+			position: relative;
+			margin-top: 15px;
+			width: 100% ;
+			height: 90%;
+		
+		}
 }
